@@ -9,6 +9,7 @@
         h1   {color: #3e2723;}
         p    {color: #4e342e;margin-top:1em;margin-bottom:0}
         input {color: #4e342e;background-color: #d7ccc8;}
+        label {color: #4e342e;}
         .radio-label-gender {
             color: #4e342e; /* Set text color */
         }
@@ -39,11 +40,14 @@
                 <input type="radio" name="gender" id="none">
                 <label for="none" class="radio-label-gender">Prefer not to say</label>
             </form>
-            
-            <p>Accept Terms</p>
-            <input type="checkbox" name="terms">
+
+            <p>Read and accept the terms</p>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Accept Terms</label>
             <p></p>
-            <input type="submit" name="submit">
+            <input type="submit" name="Submit">
+            <p></p>
+            <input type="button" value="Button for fun">
         </form>
     </div>
 </body>
