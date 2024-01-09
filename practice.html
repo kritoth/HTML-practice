@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body {background-color: #efebe9;}
+        h1   {color: #3e2723;}
+        p    {color: #4e342e;margin-top:1em;margin-bottom:0}
+        input {color: #4e342e;background-color: #d7ccc8;}
+        .radio-label-gender {
+            color: #4e342e; /* Set text color */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>First Header</h1>
+        <p>First paragraph in the first header.</p>
+    </div>
+
+    <div>
+        <h1>Some Forms</h1>
+        <form>
+            <p>Enter your username</p>
+            <input type="text" name="username" placeholder="Enter username">
+            <p>Enter your password</p>
+            <input type="password" name="password">
+            <p>Date of birth</p>
+            <input type="date" name="birthdate">
+
+            <p>Select gender</p>
+            <form>
+                <input type="radio" name="gender" id="male">
+                <label for="male" class="radio-label-gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female" class="radio-label-gender">Female</label>
+                <input type="radio" name="gender" id="none">
+                <label for="none" class="radio-label-gender">Prefer not to say</label>
+            </form>
+            
+            <p>Accept Terms</p>
+            <input type="checkbox" name="terms">
+            <p></p>
+            <input type="submit" name="submit">
+        </form>
+    </div>
+</body>
+</html>
