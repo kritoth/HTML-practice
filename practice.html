@@ -17,19 +17,31 @@
         .radio-label-gender {
             color: #4e342e; /* Set text color */
         }
+        
+        #mainAd{
+            width: 0;
+            height: 0;
+            position: sticky;
+            top: -10px;
+            left: 75%;
+        }
+
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>First Header</h1>
-
-        <p>First paragraph in the first header.</p>
-        <video width="320" height="240" controls>
+    <div id="mainAd">
+        <video width="320" height="240" margin-top="10px" controls>
             <source src="video/SampleVideo_720x480_1mb.mp4" type="video/mp4">
             Video is not suported by browser. Please upgrade your browser!
         </video>
+    </div>
 
+    <div id="introduction">
+        <h1>First Header</h1>
+
+        <p>First paragraph in the first header.</p>
+        
         <p>Second paragraph in the first header.</p>
         <audio controls>
             <source src="audio/SampleAudio_0.4mb.mp3" type="audio/mp3">
@@ -37,10 +49,16 @@
         </audio>
     </div>
 
-    <div class="forms">
+    <div id="forms">
         <h1>Second Header</h1>
         <p>Some text in the second header.</p>
     
+        <h1>Third Header</h1>
+        <p>Some text in the third header.</p>
+
+         <h1>Fourth Header</h1>
+        <p>Some text in the 4th header.</p>
+
         <div>
             <h2>Some Forms</h2>
             <form>
