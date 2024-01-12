@@ -49,6 +49,24 @@
             text-decoration: underline;
         }
 
+        input:focus{
+            background-color: #3e2723;
+            color: #efebe9;
+        }
+
+        input:checked{
+            background-color: #3e2723;
+            color: #efebe9;
+        }
+
+        #animBox{
+            transition: 1s ease-in-out;
+        }
+        #animBox:hover{
+            box-shadow: 3px 3px 3px grey;
+            transform: scale(1,1);
+        }
+
     </style>
 </head>
 
@@ -74,10 +92,12 @@
             <p>Fourth paragraph in the first header. Here is another link to the colors used for this practice: <a target="_blank" href="https://www.materialpalette.com/colors" title="Go to Material Design Colors">Material Palette</a>
             </p>
             <br>
-            <audio controls>
-                <source src="audio/SampleAudio_0.4mb.mp3" type="audio/mp3">
-                Audio is not suported by browser. Please upgrade your browser!
-            </audio>
+            
+                <audio controls id="animBox">
+                    <source src="audio/SampleAudio_0.4mb.mp3" type="audio/mp3">
+                    Audio is not suported by browser. Please upgrade your browser!
+                </audio>
+            
     </div>
 
     <div id="forms">
