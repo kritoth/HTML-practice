@@ -14,16 +14,39 @@
         option    {color: #4e342e;}
         input {color: #4e342e;background-color: #d7ccc8;}
         label {color: #4e342e;}
+        /* Class selector */
         .radio-label-gender {
             color: #4e342e; /* Set text color */
         }
-        
+        /* ID selector  */
         #mainAd{
             width: 0;
             height: 0;
             position: sticky;
             top: -10px;
             left: 75%;
+        }
+        /*Adjacent Sibling selector*/
+        h1 + P{ /*This selects the first p after an h1*/
+            color: #efebe9;
+            background-color: #8d6e63;
+            margin-right: 60em;
+        }
+        /*Select based on certain attribute*/
+        a:link{
+            text-decoration: none;
+            color: #212121;
+        }
+        a:visited[target]{
+            color: #bf360c;
+        }
+        a:hover[target]{
+            color: #795548;
+            text-decoration: underline;
+        }
+        a:active[target]{
+            color: #ff9e80;
+            text-decoration: underline;
         }
 
     </style>
@@ -39,25 +62,46 @@
 
     <div id="introduction">
         <h1>First Header</h1>
-
-        <p>First paragraph in the first header.</p>
-        
-        <p>Second paragraph in the first header.</p>
-        <audio controls>
-            <source src="audio/SampleAudio_0.4mb.mp3" type="audio/mp3">
-            Audio is not suported by browser. Please upgrade your browser!
-        </audio>
+            
+            <p>First paragraph in the first header.</p>
+            <p>Second paragraph in the first header.</p>
+            
+            <div>
+                <p>Adjacent Sibling Selector is used here. There are many other combinator selectors available <a target="_blank" href="https://www.w3schools.com/css/css_combinators.asp" title="Go to W3Schools CSS">here.</a>
+                </p>    
+            </div>
+            
+            <p>Fourth paragraph in the first header. Here is another link to the colors used for this practice: <a target="_blank" href="https://www.materialpalette.com/colors" title="Go to Material Design Colors">Material Palette</a>
+            </p>
+            <br>
+            <audio controls>
+                <source src="audio/SampleAudio_0.4mb.mp3" type="audio/mp3">
+                Audio is not suported by browser. Please upgrade your browser!
+            </audio>
     </div>
 
     <div id="forms">
         <h1>Second Header</h1>
-        <p>Some text in the second header.</p>
-    
+            <p>Some text in the second header.</p>
+            <p>More text in the second header.</p>
+            <p>Even more text in the second header. Which is a long text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum sagittis nulla, sit amet varius nulla tempus id. Praesent gravida lacus id dui facilisis pharetra. Nam eu arcu ut sem volutpat feugiat. Vestibulum ut dui eu elit bibendum hendrerit ut ac ipsum. Maecenas quis lacinia neque. Duis in dui at tortor pulvinar elementum. Nulla tincidunt convallis risus vel posuere. Curabitur tempus risus in mauris dictum, commodo tincidunt mauris fermentum. Morbi magna dui, ultrices sit amet libero eget, dignissim aliquam urna. Phasellus hendrerit nunc quis magna tempor facilisis. Etiam bibendum, nulla id ornare sollicitudin, leo lectus consequat nisi, ac convallis quam nisi nec sapien. Etiam nec molestie quam. Donec vitae eleifend purus.
+            <br>
+            <br>
+            Nullam ultricies ipsum at pulvinar sagittis. Nulla placerat dui arcu, sit amet facilisis augue ullamcorper sed. Donec eu erat eget neque varius sagittis id vel metus. Aenean fermentum dolor lectus, ac ullamcorper erat mattis in. Etiam vestibulum at diam in consectetur. Pellentesque mattis ligula odio, eget auctor felis congue tristique. Morbi feugiat velit vel justo mattis fermentum. Proin dignissim diam vitae volutpat efficitur.
+            <br>
+            <br>
+            Phasellus bibendum congue dignissim. Donec ullamcorper justo in efficitur sagittis. Aliquam at felis et libero rhoncus ornare volutpat eget ipsum. Donec euismod sagittis mi, et imperdiet augue fermentum quis. Duis fermentum blandit lacinia. Fusce sed consequat elit, et accumsan orci. Nunc pulvinar urna eros, laoreet egestas mi mollis sed. Cras ut nulla sit amet tortor faucibus maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque volutpat nisi dolor, et blandit sem porta at. Ut vitae nisl fermentum, tempor nunc non, commodo elit. Praesent tincidunt lectus tortor, eget gravida leo lobortis vel. Etiam euismod felis quam, gravida fringilla dolor dictum sit amet. Nunc vel lacinia mi. Mauris eget nibh in mauris dignissim cursus. This amazing text was <span><a target="_blank" href="https://lipsum.com" title="Go to Lipsum">generated here!</a></span>
+            </p>
+        
         <h1>Third Header</h1>
-        <p>Some text in the third header.</p>
+            <p>Some text in the third header.</p>
+            <p>More text in the third header.</p>
+            <p>Even more text in the third header.</p>
 
          <h1>Fourth Header</h1>
-        <p>Some text in the 4th header.</p>
+            <p>Some text in the 4th header.</p>
+            <p>More text in the 4th header.</p>
+            <p>Even more text in the 4th header.</p>
 
         <div>
             <h2>Some Forms</h2>
