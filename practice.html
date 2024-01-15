@@ -14,10 +14,29 @@
         option    {color: #4e342e;}
         input {color: #4e342e;background-color: #d7ccc8;}
         label {color: #4e342e;}
+        footer{
+            margin-top: 3px;
+            padding: 3px;
+            background-color: #D7CCC8;
+            color: white;
+        }
+
         /* Class selector */
         .radio-label-gender {
             color: #4e342e; /* Set text color */
         }
+
+        .flex-container{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .flex-item{
+            margin: 8px;
+        }
+
+
         /* ID selector  */
         #mainAd{
             width: 0;
@@ -33,7 +52,7 @@
             margin-right: 60em;
         }
         /*Select based on certain attribute*/
-        a:link{
+        a:link[target]{
             text-decoration: none;
             color: #212121;
         }
@@ -144,5 +163,20 @@
             </form>
         </div>
     </div>
+    
+    <footer class="flex-container">    
+        <address class="flex-item" id="footer item-1">
+            Written by <a href="mailto:webmaster@example.com" target="_blank">Jon Doe</a>.
+        </address>
+        
+        <address class="flex-item" id="footer item-2">
+            Visit us at: Example.com
+        </address>    
+        
+        <address class="flex-item" id="footer item-3">
+            Box 564, Disneyland, USA
+        </address>
+    </footer>
+    
 </body>
 </html>
